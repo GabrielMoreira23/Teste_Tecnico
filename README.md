@@ -14,10 +14,11 @@ Dentro deste projeto, você encontrará cinco classes, cada uma delas desenvolvi
 ### 🚀 Funcionalidades Implementadas
 
 1. **Somador**: Classe que calcula a soma de números consecutivos até o valor de um índice.
-2. **Fibonacci**: Verifica se um número informado pertence à sequência de Fibonacci.
-3. **FaturamentoDistribuidora**: Lê dados de faturamento diário a partir de um arquivo JSON, calculando o menor, maior faturamento, a média mensal e dias acima da média.
+2. **FaturamentoPorEstado**: Calcula o percentual de faturamento de uma distribuidora por estado com base em dados fornecidos.
+3. **InversorString**: Inverte uma string informada sem o uso de funções nativas como `reverse`.
 4. **FaturamentoPorEstado**: Calcula o percentual de faturamento de uma distribuidora por estado com base em dados fornecidos.
-5. **InversorString**: Inverte uma string informada sem o uso de funções nativas como `reverse`.
+5. **Fibonacci**: Verifica se um número informado pertence à sequência de Fibonacci.
+
 
 ---
 
@@ -58,11 +59,7 @@ Dentro deste projeto, você encontrará cinco classes, cada uma delas desenvolvi
    - Esta classe realiza a soma dos números inteiros até um determinado índice. A lógica é simples, mas eficiente para o propósito de somas consecutivas. 
    - Cuidados: Ao utilizar loops em Python, certifique-se de não ultrapassar o índice final, evitando loops infinitos que possam causar travamentos.
 
-### 2. **Fibonacci**
-   - Aqui, resolvemos a verificação de sequência de Fibonacci. Dado um número, ele retorna se o número pertence à sequência. Além disso, o algoritmo é otimizado para evitar cálculos desnecessários.
-   - Dica: Python lida bem com números grandes, mas em alguns casos, calcular Fibonacci para números muito altos pode exigir técnicas de memoização para melhorar a performance.
-
-### 3. **FaturamentoDistribuidora**
+### 2. **FaturamentoDistribuidora**
    - Lê dados de faturamento diário a partir de um arquivo JSON e faz os seguintes cálculos:
      - Menor valor de faturamento.
      - Maior valor de faturamento.
@@ -70,13 +67,18 @@ Dentro deste projeto, você encontrará cinco classes, cada uma delas desenvolvi
    - **Importante**: Dias com faturamento `0` (final de semana ou feriados) são ignorados no cálculo da média mensal.
    - Cuidados: Para processar dados JSON, certifique-se de que o arquivo esteja no formato correto e que o código trate exceções, como arquivos faltantes ou malformados.
 
+### 3. **InversorString**
+   - Recebe uma string como entrada e retorna sua versão invertida, sem usar funções prontas como `reverse`.
+   - Cuidados: Ao lidar com strings de grandes tamanhos, o uso excessivo de concatenação pode impactar a performance. Em Python, é melhor usar listas e depois unir os elementos usando `"".join(lista)`.
+
 ### 4. **FaturamentoPorEstado**
    - Utiliza um dicionário com dados de faturamento por estado e calcula o percentual de participação de cada um no faturamento total.
    - Dica: Certifique-se de que todos os valores do dicionário estão corretos e consistentes. É útil validar os dados antes de realizar cálculos.
 
-### 5. **InversorString**
-   - Recebe uma string como entrada e retorna sua versão invertida, sem usar funções prontas como `reverse`.
-   - Cuidados: Ao lidar com strings de grandes tamanhos, o uso excessivo de concatenação pode impactar a performance. Em Python, é melhor usar listas e depois unir os elementos usando `"".join(lista)`.
+### 5. **Fibonacci**
+   - Aqui, resolvemos a verificação de sequência de Fibonacci. Dado um número, ele retorna se o número pertence à sequência. Além disso, o algoritmo é otimizado para evitar cálculos desnecessários.
+   - Dica: Python lida bem com números grandes, mas em alguns casos, calcular Fibonacci para números muito altos pode exigir técnicas de memoização para melhorar a performance.
+
 
 ---
 
