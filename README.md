@@ -82,14 +82,6 @@ Dentro deste projeto, você encontrará cinco classes, cada uma delas desenvolvi
 
 ---
 
-## 🚀 Próximos Passos
-
-- Melhorar a leitura de arquivos JSON para que possam ser facilmente configuráveis pelo usuário.
-- Adicionar testes unitários para validar as soluções de maneira automatizada.
-- Permitir a entrada de dados via linha de comando, tornando o código mais interativo.
-
----
-
 <p align="center">
   <strong>Contribuições são bem-vindas!</strong> 😊 Se quiser aprimorar algo ou sugerir melhorias, fique à vontade para abrir issues ou enviar pull requests.
 </p>
